@@ -72,7 +72,7 @@ input, select, textarea {
 	appearance: none;
 }
 
-.typewriter h1 {
+/* .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid purple; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -81,7 +81,7 @@ input, select, textarea {
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-}
+} */
 /* 
 .typewriter p {
 	overflow: hidden;
@@ -110,7 +110,7 @@ input, select, textarea {
 /* Animation */
 .anim-typewriter p{
 animation: typewriter 4s steps(44) 1s 1 normal both,
-					 blinkTextCursor 500ms steps(44) infinite normal;
+					 blinkTextCursor 700ms steps(44) infinite normal;
 }
 @keyframes typewriter{
 from{width: 0;}
