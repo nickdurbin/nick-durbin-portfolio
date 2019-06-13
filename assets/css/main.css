@@ -72,16 +72,16 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* .typewriter h1 {
+.typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid purple; /* The typwriter cursor */
+  border-right: .15em solid #e60073; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-} */
+}
 /* 
 .typewriter p {
 	overflow: hidden;
@@ -107,6 +107,24 @@ input, select, textarea {
 	transform: translateY(-50%);    
 }
 
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 /* Animation */
 .anim-typewriter p{
 animation: typewriter 4s steps(44) 1s 1 normal both,
@@ -130,7 +148,7 @@ to{border-right-color: transparent;}
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: purple; }
+  50% { border-color: #e60073; }
 }
 
 /* Basic */
