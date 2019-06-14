@@ -77,11 +77,17 @@ input, select, textarea {
   border-right: .15em solid #e60073; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
+	letter-spacing: .15em; /* Adjust as needed */
+	border: hidden;
+	animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
+
+.typewriter h1:after {
+	overflow: visible;
+}
+
 /* 
 .typewriter p {
 	overflow: hidden;
@@ -94,7 +100,7 @@ input, select, textarea {
 		blink-caret .75s step-end infinite;
 } */
 
-.line-1 p{
+/* .line-1 p{
 	position: relative;
 	top: 50%;  
 	width: 24em;
@@ -105,7 +111,7 @@ input, select, textarea {
 	white-space: nowrap;
 	overflow: hidden;
 	transform: translateY(-50%);    
-}
+} */
 
 .glow {
   font-size: 80px;
@@ -125,11 +131,12 @@ input, select, textarea {
   }
 }
 
-/* Animation */
+/* Animation
 .anim-typewriter p{
 animation: typewriter 4s steps(44) 1s 1 normal both,
 					 blinkTextCursor 700ms steps(44) infinite normal;
-}
+} */
+
 @keyframes typewriter{
 from{width: 0;}
 to{width: 24em;}
@@ -1372,7 +1379,7 @@ to{border-right-color: transparent;}
 		#header .logo {
 			width: 5.5rem;
 			height: 5.5rem;
-			line-height: 5.5rem;
+			line-height: 4.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
